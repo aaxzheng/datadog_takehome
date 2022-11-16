@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+.bg-datadog {
+  background: $bg-datadog
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  align-items: flex-start;
+  padding: 0.5rem 1.5rem;
+  z-index: 1;
+}
+
+.sidebar-items { 
+  .nav-item * {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  padding: 0;
+  font-weight: 700;
+    &:hover {
+      color: #FFFFFF;
+      opacity: .5;
+    }
+  }
+
+  .sidebar-login a {
+    text-transform: none;
+    font-weight: 400;
+    margin-top: 1.5rem;
+  }
+}
+
+.navbar-brand {
+  margin: 35px 0 50px 0;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+
+.footer {
+  height: 340px;
+  z-index: 0;
+}
