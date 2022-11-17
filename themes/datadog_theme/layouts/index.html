@@ -1,10 +1,102 @@
 {{ define "main" }}
 <div>
   {{- partial "sidebar.html" . -}}
-  <div class="container">
-    <div>
-      <div>Body</div>
+  <div class="container-fluid content-body">
+    <div class="row">
+      <div class="col-3 intro-text">
+        <h1>Modern monitoring & analytics</h1>
+        <p>See inside any stack, any app, at any scale, anywhere.</p>
+        <a class="container trial-button" href="#">
+            Try Free
+        </a>
+      </div>
+      <div class="col-9 plan-pricing">
+        <div class="row">
+          <div class="col-4 plan-body">
+            <div class="container plan-content">
+              <h6 class="pricing-header infrastructure">
+                Infrastructure
+              </h6>
+              <div>
+                <p>Starting at</p>
+                <h1>$15</h1>
+                <span class="small-font">Per host, per month*</span>
+              </div>
+              <div>
+                <p class="point-header">Centralize your monitoring of systems and services</p>
+                <ul class="list-unstyled pricing-points">
+                  <li>
+                    250+ integrations
+                  </li>
+                  <li>
+                    Out-of-the-box dashboards
+                  </li>
+                  <li>
+                    15-month metric retention
+                  </li>
+                </ul>
+              </div>
+              <a class="align-bottom plan-details infrastructure" href="#">See Details</a>
+            </div>
+          </div>
+          <div class="col-4 plan-body apm-border">
+            <div class="container plan-content">
+              <h6 class="pricing-header apm">
+                APM
+              </h6>
+              <div>
+                <p>Starting at</p>
+                <h1>$31</h1>
+                <span class="small-font">Per host, per month*</span>
+              </div>
+              <div>
+                <p class="point-header">Centralize your monitoring of systems and services</p>
+                <ul class="list-unstyled pricing-points">
+                  <li>
+                    Java, Ruby, Python, Go, Node, and more
+                  </li>
+                  <li>
+                    Out-of-the-box application health dashboards
+                  </li>
+                  <li>
+                    1 million trace events per host included
+                  </li>
+                </ul>
+              </div>
+              <a class="align-bottom plan-details apm" href="#">See Details</a>
+            </div>
+          </div>
+          <div class="col-4 plan-body">
+            <div class="container plan-content">
+              <h6 class="pricing-header logs-management">
+                Logs Management
+              </h6>
+              <div>
+                <p>Starting at</p>
+                <h1>$1.27</h1>
+                <span class="small-font">Per host, per month*</span>
+              </div>
+              <div>
+                <p class="point-header">Analyze and explore log data in context</p>
+                <ul class="list-unstyled pricing-points">
+                  <li>
+                    Collect from any source
+                  </li>
+                  <li>
+                    Automated & custom processing
+                  </li>
+                  <li>
+                    Fully integrated with infrastructure and APM
+                  </li>
+                </ul>
+              </div>
+              <a class="align-bottom plan-details logs-management" href="#">See Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div></div>
   </div>
 </div>
 {{ end }}

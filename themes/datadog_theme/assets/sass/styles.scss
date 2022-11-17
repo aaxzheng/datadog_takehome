@@ -8,7 +8,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 10%;
+  width: $sidebar-width;
   height: 100%;
   align-items: flex-start;
   padding: 0.5rem 1.5rem;
@@ -53,4 +53,111 @@
 .footer {
   height: 340px;
   z-index: 0;
+}
+
+.content-body {
+  padding-left: $sidebar-width + 60px;
+  padding-top: 40px;
+}
+
+.intro-text {
+  h1 {
+    font-size: 48px;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 28px;
+  }
+}
+
+.trial-button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 3px solid $bg-datadog;
+  margin-top: 180px;
+  padding: 30px 130px;
+  color: $bg-datadog;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+
+  &:hover {
+    opacity: 0.6;
+    color: $bg-datadog;
+    text-decoration: none;
+  }
+}
+
+.plan-body {
+  position: relative;
+  margin: 24px 0;
+
+  &.apm-border {
+    border-left: 2px solid #C7C7C7;
+    border-right: 2px solid #C7C7C7;
+  }
+}
+
+.plan-content {
+  padding: 0 40px;
+}
+
+.pricing-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.plan-pricing {
+  background: #F5F5F5;
+
+
+  &.col-9 {
+    max-width: 60%;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.point-header {
+  margin-top: 1rem;
+}
+
+.pricing-points {
+  list-style: none;
+  line-height: 2rem;
+
+  li::before {
+    content: "-";
+  }
+}
+
+.plan-details {
+  position: absolute;
+  bottom: 0px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.infrastructure {
+  color: $infrastructure !important;
+}
+
+.apm {
+  color: $apm !important; 
+}
+
+.logs-management {
+  color: $logs-management !important;
+}
+
+.small-font {
+  font-size: .8rem;
 }
