@@ -5,7 +5,7 @@
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: $sidebar-width;
@@ -56,7 +56,7 @@
 }
 
 .content-body {
-  padding-left: $sidebar-width + 60px;
+  padding-left: $sidebar-width + 30px;
   padding-top: 40px;
 }
 
@@ -64,6 +64,7 @@
   h1 {
     font-size: 48px;
     margin-right: 20px;
+    margin-bottom: 18px;
   }
   p {
     font-size: 28px;
@@ -76,7 +77,7 @@
   align-items: center;
   width: 100%;
   border: 3px solid $bg-datadog;
-  margin-top: 180px;
+  margin-top: 200px;
   padding: 30px 130px;
   color: $bg-datadog;
   font-size: 24px;
@@ -92,16 +93,13 @@
 
 .plan-body {
   position: relative;
-  margin: 24px 0;
+  margin: 24px 0 24px;
+  font-size: 15px;
 
   &.apm-border {
     border-left: 2px solid #C7C7C7;
     border-right: 2px solid #C7C7C7;
   }
-}
-
-.plan-content {
-  padding: 0 40px;
 }
 
 .pricing-header {
@@ -116,7 +114,7 @@
 
   &.col-9 {
     max-width: 60%;
-    margin-left: 90px;
+    margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
   }
@@ -160,4 +158,8 @@
 
 .small-font {
   font-size: .8rem;
+}
+
+.card {
+  width: 50%;
 }
