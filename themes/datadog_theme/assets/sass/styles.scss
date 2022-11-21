@@ -161,5 +161,173 @@
 }
 
 .card {
-  width: 50%;
+  width: 45%;
+  mix-blend-mode: multiply;
+  margin: 30px;
+  margin-left: 0;
+
+  &.apm {
+    background: $apm;
+  }
+
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    h6 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+
+  &.apm {
+    background: $apm;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+}
+
+.adroll-statement {
+  padding: 30px 20px 20px 20px;
+  
+  img {
+    margin-bottom: 30px;
+  }
+
+  .signature {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  a {
+    color: $bg-datadog;
+  }
+}
+
+
+.no-img {
+  background: $card-bg;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .row {
+    width: 100%;
+  }
+}
+
+.brands-upper-cards {
+  width: 100%;
+  padding: 0;
+}
+
+.brands-lower {
+  width: 100%;
+  .col-4 {
+    padding: 0;
+    
+  }
+}
+
+.brand-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  height: 185px;
+
+  
+  &.evernote {
+    background: $bg-evernote;
+  }
+
+  &.pagerduty {
+    background: $bg-pagerduty;
+  }
+
+  &.samsung {
+    background: $bg-samsung;
+  }
+
+  &.whole-foods {
+    background: $bg-black;
+  }
+
+  &.airbnb {
+    background: $bg-airbnb;
+  }
+
+  &.nginx {
+    background: $bg-nginx;
+  }
+
+  &.peloton {
+    background: $bg-black;
+  }
+
+  &.att {
+    background: $bg-att;
+  }
+}
+
+
+.carousel-card {
+  padding: 25px;
+}
+
+.carousel-header {
+  margin-bottom: 100px;
+
+  h6 {
+    text-transform: uppercase;
+    color: $bg-datadog;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+  }
+
+  .carousel-header-content {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  a {
+    color: $bg-datadog;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
+
+.carousel-inner {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.partial-img {
+  display: inline-block;
 }

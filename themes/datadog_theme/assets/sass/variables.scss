@@ -5,3 +5,61 @@ $apm: #14D071;
 $logs-management: #FF635A;
 $white: #FFFFFF;
 $sidebar-width: 180px;
+$card-bg: #F5F5F5;
+$bg-airbnb: #FF5A5F;
+$bg-evernote: #292929;
+$bg-pagerduty: #5DBD5F;
+$bg-samsung: #1428A0;
+$bg-black: #000000;
+$bg-nginx: #00AA4E;
+$bg-att: #00A8E0;
+
+
+// Media Query breakpoints
+$media-query-breaks: (
+  "phone-sm":    320px,
+  "phone-mid":   375px,
+  "phone-lg":    425px,
+  "tablet-sm":   600px,
+  "tablet-mid":  768px,
+  "tablet-lg":   1180px,
+  "desktop-sm":  1440px,
+  "desktop-mid": 1680px,
+  "desktop-lg":  1920px
+);
+
+@mixin media-query($width, $type: min, $view: none) {
+  @if map_has_key($media-query-breaks, $width) {
+    $width: map_get($media-query-breaks, $width);
+  }
+
+  @if ($type == max or $type == min or $type == max-device or $type == min-device ) {
+    @if ($view == none) {
+      @media screen and (#{$type}-width: $width) {
+        @content;
+      }
+    }
+
+    @else {
+      @media screen and (#{$type}-width: $width) and (orientation: $view) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-query-vertical($width, $type: max, $view: none) {
+  @if ($type == max or $type == min or $type == max-device or $type == min-device ) {
+    @if ($view == none) {
+      @media screen and (#{$type}-height: $width) {
+        @content;
+      }
+    }
+
+    @else {
+      @media screen and (#{$type}-height: $width) and (orientation: $view) {
+        @content;
+      }
+    }
+  }
+}
