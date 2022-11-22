@@ -514,6 +514,10 @@
     padding-bottom: 100px;
   }
 
+  @include media-query("tablet-sm", max) {
+    padding-left: 0;
+  }
+
   .border-bottom {
     color: $footer-text;
     padding-bottom: 7px;
