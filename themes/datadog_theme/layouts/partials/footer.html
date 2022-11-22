@@ -1,5 +1,6 @@
 <footer>
   <!-- JavaScript and dependencies -->
+  <!-- Carousel image preview logic -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   {{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
   {{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
