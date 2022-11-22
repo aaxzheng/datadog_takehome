@@ -194,6 +194,10 @@
   z-index: 0;
   mix-blend-mode: multiply;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &.apm {
     background:$apm;
   }
@@ -237,6 +241,7 @@
   h6 {
     color: $bg-datadog;
     font-size: 0.75rem;
+    text-transform: uppercase;
   }
 
   p {
@@ -258,6 +263,10 @@
       cursor: pointer;
     }
   }
+}
+
+.carousel-inner {
+  white-space: nowrap;
 }
 
 .carousel-item {
