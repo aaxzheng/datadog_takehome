@@ -4,7 +4,6 @@ $infrastructure: #2B2AA7;
 $apm: #14D071;
 $logs-management: #FF635A;
 $white: #FFFFFF;
-$sidebar-width: 180px;
 $card-bg: #F5F5F5;
 $bg-airbnb: #FF5A5F;
 $bg-evernote: #292929;
@@ -15,16 +14,18 @@ $bg-nginx: #00AA4E;
 $bg-att: #00A8E0;
 $footer-text: #B6B6B6;
 
+$sidebar-width: 180px;
+$sidebar-height: 75px;
 
 // Media Query breakpoints
 $media-query-breaks: (
   "phone-sm":    320px,
   "phone-mid":   375px,
   "phone-lg":    425px,
-  "tablet-sm":   600px,
-  "tablet-mid":  768px,
+  "tablet-sm":   768px,
+  "tablet-mid":  992px,
   "tablet-lg":   1180px,
-  "desktop-sm":  1440px,
+  "desktop-sm":  1320px,
   "desktop-mid": 1680px,
   "desktop-lg":  1920px
 );
